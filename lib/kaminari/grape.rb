@@ -1,6 +1,6 @@
 require "kaminari/grape/version"
 
 require 'grape'
-require 'kaminari'
+require 'kaminari/core'
 
 Kaminari::Hooks.init
