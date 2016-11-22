@@ -5,5 +5,5 @@ source 'https://rubygems.org'
 gemspec
 
 #FIXME bundle GH master for now
-gem 'kaminari-core', github: 'amatsuda/kaminari'
-gem 'kaminari-activerecord', github: 'amatsuda/kaminari'
+gem 'kaminari-core', github: 'amatsuda/kaminari', branch: 'test-unit'
+gem 'kaminari-activerecord', github: 'amatsuda/kaminari', branch: 'test-unit'

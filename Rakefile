@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 require "bundler/gem_tasks"
-require "rspec/core/rake_task"
+require 'rake/testtask'
 
-RSpec::Core::RakeTask.new(:spec) do |spec|
-  # RSpec 2 does not yet support exclude_pattern...
-  spec.pattern = [FileList['spec/**/*_spec.rb'], "#{File.join(Gem.loaded_specs['kaminari-core'].gem_dir, 'spec')}/[^r][^e][^q]*/*_spec.rb"]
+Rake::TestTask.new do |t|
+  t.libs << 'test'
+  t.test_files = FileList["{test,#{File.join(Gem.loaded_specs['kaminari-core'].gem_dir, 'test')}}/**/*_test.rb"].exclude("#{File.join(Gem.loaded_specs['kaminari-core'].gem_dir, 'test')}/requests/*_test.rb")
+  t.warning = true
+  t.verbose = true
 end
 
-task :default => :spec
+task default: :test
