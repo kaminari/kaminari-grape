@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Akira Matsuda"]
   spec.email         = ["ronnie@dio.jp"]
 
-  spec.summary       = 'Kaminari Grape adapter.'
-  spec.description   = 'Kaminari Grape adapter.'
+  spec.summary       = 'Kaminari Grape adapter'
+  spec.description   = 'kaminari-grape connects Kaminari and Grape'
   spec.homepage      = 'https://github.com/kaminari/kaminari-grape'
   spec.license       = "MIT"
 
