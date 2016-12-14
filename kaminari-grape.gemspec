@@ -28,6 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'activerecord'
   spec.add_development_dependency 'sqlite3'
   spec.add_development_dependency 'database_cleaner'
-  spec.add_dependency 'kaminari-core'
+  spec.add_dependency 'kaminari-core', Kaminari::Grape::VERSION
   spec.add_dependency 'grape'
 end
