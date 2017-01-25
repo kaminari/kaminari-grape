@@ -27,6 +27,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'capybara'
   spec.add_development_dependency 'activerecord'
   spec.add_development_dependency 'sqlite3'
-  spec.add_dependency 'kaminari-core', Kaminari::Grape::VERSION
+  spec.add_dependency 'kaminari-core', '~> 1.0'
   spec.add_dependency 'grape'
 end
