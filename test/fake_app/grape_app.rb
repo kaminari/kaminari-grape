@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'fake_app/active_record/config'
+
 require 'fake_app/active_record/models'
 
 class GrapeApp < ::Grape::API
